@@ -1,7 +1,6 @@
 import Brand2 from '@/app/Components/Brand/Brand2';
 import BreadCumb from '@/app/Components/Common/BreadCumb';
 import Services from '@/app/Components/Services/Services';
-import Testimonail2 from '@/app/Components/Testimonial/Testimonail2';
 import React from 'react';
 
 const page = () => {
@@ -13,9 +12,6 @@ const page = () => {
                 title2="SERVICES"
             ></BreadCumb>  
             <Services></Services>   
-            <Testimonail2
-                addclass="testimonial-area space-bottom bg-theme2"
-            ></Testimonail2> 
             <Brand2></Brand2>                   
         </div>
     );

@@ -11,10 +11,10 @@ const Footer1 = () => {
                     </div>
                     <div className="col-xl-12">
                         <div className="contact-mail">
-                            <a href="mailto:hellowcontacts@gmail.com" className="bg-black2">
+                            <a href="mailto:franciless14@gmail.com" className="bg-black2">
                                 <span className="link-effect">
-                                    <span className="effect-1">hellowcontacts@gmail.com</span>
-                                    <span className="effect-1">hellowcontacts@gmail.com</span>
+                                    <span className="effect-1">franciless14@gmail.com</span>
+                                    <span className="effect-1">franciless14@gmail.com</span>
                                 </span>
                                 <Image src="/assets/images/icons/arrow-left-top.svg" alt="img" width={16} height={40}   />
                             </a>

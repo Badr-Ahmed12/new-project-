@@ -19,40 +19,6 @@ const HeroBanner1 = ({number,email,expnum,expcontent,title1,title2,title3,title4
                         <a href="mailto:{email}">{email}</a>
                     </div>
                 </div>
-                <div className="hero-social-wrapper d-none d-xxl-block">
-                    <div className="hero-social_arrow mb-30">
-                     </div>
-                    <div className="hero-social">
-                        <div className="parallax-wrap">
-                            <div className="parallax-element">
-                                <a className="facebook" href="#">
-                                <i className="bi bi-facebook"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="parallax-wrap">
-                            <div className="parallax-element">
-                                <a className="twitter" href="#">
-                                <i className="bi bi-twitter"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="parallax-wrap">
-                            <div className="parallax-element">
-                                <a className="instagram" href="#">
-                                <i className="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="parallax-wrap">
-                            <div className="parallax-element">
-                                <a className="dribbble" href="#">
-                                <i className="bi bi-instagram"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div className="hero-experience-wrapper d-none d-xxl-block">
                     <div className="inner">
                         <h2 className="year"><span className="count-number">{expnum}</span>+</h2>

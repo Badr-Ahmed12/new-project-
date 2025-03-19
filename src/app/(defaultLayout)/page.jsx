@@ -9,8 +9,8 @@ import Services1 from '../Components/Services/Services1';
 const Page = () => (
   <div>
     <HeroBanner1
-      number="+123 (4567) 890"
-      email="example@gmail.com"
+      number="+20 1067683447"
+      email="franciless14@gmail.com"
       expnum="8"
       expcontent="YEARS OF <br> EXPERIENCE"
       title1="Hi there!"

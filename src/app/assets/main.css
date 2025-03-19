@@ -27,7 +27,7 @@
 }
 
 :root {
-    --theme-color: #DDB166;
+    --theme-color: #CEFF00;
     --title-color: var(--white-color);
     --body-color: var(--gray-color);
     --black-color: #171717;
@@ -67066,4 +67066,23 @@ a.text-theme:hover,
 }
 .faq-area .accordion.active .acc-content{
     display: block;
+}
+
+.fade-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.fade-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+}
+.fade-exit {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-exit-active {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
 }

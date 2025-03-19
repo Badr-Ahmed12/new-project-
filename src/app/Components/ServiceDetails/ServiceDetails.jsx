@@ -1,34 +1,35 @@
 "use client"
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Link from "next/link";
 import Image from "next/image";
 
 const ServiceDetails = () => {
 
-    useEffect(() => {
+    const accordionContentRef = useRef(null);
+    const [openItemIndex, setOpenItemIndex] = useState(-1);
+    const [firstItemOpen, setFirstItemOpen] = useState(true);
+    
+    const handleItemClick = index => {
+        if (index === openItemIndex) {
+            setOpenItemIndex(-1);
+        } else {
+            setOpenItemIndex(index);
+        }
+    };
+
+    useLayoutEffect(() => {
+        if (firstItemOpen) {
+            setOpenItemIndex(0);
+            setFirstItemOpen(false);
+        }
+    }, [firstItemOpen]);
+
+    useLayoutEffect(() => {
         loadBackgroudImages();
-      }, []);
+    }, []);
 
-         const accordionContentRef = useRef(null);
-          const [openItemIndex, setOpenItemIndex] = useState(-1);
-          const [firstItemOpen, setFirstItemOpen] = useState(true);
-        
-          const handleItemClick = index => {
-            if (index === openItemIndex) {
-              setOpenItemIndex(-1);
-            } else {
-              setOpenItemIndex(index);
-            }
-          };
-          useEffect(() => {
-            if (firstItemOpen) {
-              setOpenItemIndex(0);
-              setFirstItemOpen(false);
-            }
-          }, [firstItemOpen]);  
-
-      const faqContent = [
+    const faqContent = [
         {
             title:'Why should I choose nabhan', 
             content:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered some form, by injected humour, or randomised words which do not look even slightly believable.'              
@@ -40,8 +41,8 @@ const ServiceDetails = () => {
         {
             title:'We build and activate brands', 
             content:'There are many variations of passages of Lorem Ipsum available, but the majority have suffered some form, by injected humour, or randomised words which do not look even slightly believable.'              
-      }     
-  ]; 
+        }     
+    ]; 
 
     return (
         <div>

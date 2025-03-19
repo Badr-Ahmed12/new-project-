@@ -130,9 +130,8 @@ const ProjectDetails = () => {
                     </div>
                 </div>
             </div>
-            
         </div>
-    );
+        );
 };
 
 export default ProjectDetails;

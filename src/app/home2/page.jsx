@@ -11,26 +11,20 @@ import Pricing2 from '../Components/Pricing/Pricing2';
 import Testimonail2 from '../Components/Testimonial/Testimonail2';
 import Blog2 from '../Components/Blog/Blog2';
 
-const page = () => {
-    return (
-        <div>
-           <HeroBanner2></HeroBanner2> 
-           <Marquee2></Marquee2>
-           <About2></About2>
-           <Skill1></Skill1>
-           <Experience></Experience>  
-           <Project2></Project2> 
-           <Brand1></Brand1>      
-           <Services2></Services2> 
-           <Pricing2
-                addclass="pricing-area space"
-            ></Pricing2> 
-             <Testimonail2
-                addclass="testimonial-area space bg-theme2"
-            ></Testimonail2>   
-            <Blog2></Blog2>                  
-        </div>
-    );
-};
+const Page = () => (
+  <div>
+    <HeroBanner2 />
+    <Marquee2 />
+    <About2 />
+    <Skill1 />
+    <Experience />
+    <Project2 />
+    <Brand1 />
+    <Services2 />
+    <Pricing2 addclass="pricing-area space" />
+    <Testimonail2 addclass="testimonial-area space bg-theme2" />
+    <Blog2 />
+  </div>
+);
 
-export default page;
+export default Page;

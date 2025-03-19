@@ -97,9 +97,7 @@ const Footer1 = () => {
             <div className="container">
                 <div className="row justify-content-between align-items-center">
                     <div className="col-xl-12 text-center">
-                        <p className="copyright-text">© Nabhan — 2024. All rights reserved. Powered by
-                            <a href="https://themeforest.net/user/themeservices">Themeservices</a>
-                        </p>
+                        <p className="copyright-text">&copy; Copyright by  Mohmed — {new Date().getFullYear()}. All rights reserved</p>
                     </div>
                 </div>
             </div>

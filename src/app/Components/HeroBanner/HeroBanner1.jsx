@@ -12,7 +12,7 @@ const HeroBanner1 = ({number,email,expnum,expcontent,title1,title2,title3,title4
       }, []);
 
     return (
-        <section className="hero-wrapper hero-2" id="hero-2" data-background="assets/images/background/hero-2.jpg">
+        <section className="hero-wrapper hero-2" id="hero-2" >
                 <div className="hero-left-wrapper d-none d-xxl-block">
                     <div className="contact">
                         <a href="tel:+1234567890">{number}</a>
@@ -21,8 +21,7 @@ const HeroBanner1 = ({number,email,expnum,expcontent,title1,title2,title3,title4
                 </div>
                 <div className="hero-social-wrapper d-none d-xxl-block">
                     <div className="hero-social_arrow mb-30">
-                    <Image src="/assets/images/icons/arrow-down-bottom.svg" alt="img" width={50} height={220}   />
-                    </div>
+                     </div>
                     <div className="hero-social">
                         <div className="parallax-wrap">
                             <div className="parallax-element">
@@ -69,7 +68,7 @@ const HeroBanner1 = ({number,email,expnum,expcontent,title1,title2,title3,title4
                                         <p className="hero-sub_title">{title1} <Image src="/assets/images/hero/hand.png" alt="img" width={40} height={40}   />{title2}</p>
                                         <div className="hero-title_wrapper">
                                             <h1 className="hero-title cd-headline title_anim">{title3}</h1>
-                                            <div className="hero-title_shape"><Image className="br-70" src="/assets/images/hero/title-shape.jpg" alt="img" width={230} height={90}   /></div>
+                                            <div className="hero-title_shape"></div>
                                         </div>
                                         <div className="hero-title_wrapper upper">
                                             <div className="hero-place">

@@ -65,7 +65,7 @@ export default function Header({ variant }) {
             <div className="cs_main_header_right">
             <div className="header-button">
                   <div className="btn-wrap fade_right">
-                      <Link href="/project" className="link-btn" >
+                      <Link href="#Let`s-talk" className="link-btn" >
                           <span className="link-effect">
                               <span className="effect-1">Lets Talk</span>
                               <span className="effect-1">Lets Talk</span>

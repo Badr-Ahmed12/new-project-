@@ -5,9 +5,6 @@ import Marquee from '../Components/Marquee/Marquee';
 import Project1 from '../Components/Project/Project1';
 import Brand1 from '../Components/Brand/Brand1';
 import Services1 from '../Components/Services/Services1';
-import Pricing from '../Components/Pricing/Pricing';
-import Testimonial from '../Components/Testimonial/Testimonial';
-import Blog1 from '../Components/Blog/Blog1';
 
 const Page = () => (
   <div>
@@ -19,7 +16,7 @@ const Page = () => (
       title1="Hi there!"
       title2="I'm Mohamed"
       title3="CREATIVE"
-      title4="BASED IN ALEXANDRAY EGYPT"
+      title4="BASED IN ALEXANDRIE EGYPT"
       title5="DESIGNER"
       btnname="VIEW MY WORKS"
       btnurl="/project"
@@ -29,8 +26,7 @@ const Page = () => (
     <Project1 />
     <Brand1 />
     <Services1 />
-    <Testimonial />
-   </div>
+    </div>
 );
 
 export default Page;

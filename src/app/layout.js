@@ -15,19 +15,6 @@ const playfair_display = Playfair_Display({
   variable: '--heading-font',
 });
 
-export const metadata = {
-  title: {
-    absolute: '',
-    default: 'Nabhan - Personal Portfolio NextJS Template',
-    template: '%s | Nabhan - Personal Portfolio NextJS Template',
-  },
-  description: 'Nabhan - Personal Portfolio NextJS Template',
-  openGraph: {
-    title: 'Nabhan - Personal Portfolio NextJS Template',
-    description: 'Nabhan - Personal Portfolio NextJS Template',
-  },
-};
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

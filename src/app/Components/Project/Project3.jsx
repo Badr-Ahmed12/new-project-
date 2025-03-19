@@ -3,66 +3,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import { projectContent } from ".";
 
 const Project3 = () => {
-  const projectContent = [
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_1.jpg",
-      title: "Illustrator Graphics",
-      category: "Designing",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_2.jpg",
-      title: "Figma Design",
-      category: "Application",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_3.jpg",
-      title: "Book Cover Mockup Design",
-      category: "Branding",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_4.jpg",
-      title: "Figma Design",
-      category: "Application",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_5.jpg",
-      title: "Illustrator Graphics",
-      category: "Designing",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_6.jpg",
-      title: "Book Cover Mockup Design",
-      category: "Designing",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_7.jpg",
-      title: "Creative Poster Design",
-      category: "Branding",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_8.jpg",
-      title: "Mobile App UI",
-      category: "Application",
-    },
-    {
-      addclass: "col-xl-4 col-lg-6 col-md-6",
-      img: "/assets/images/portfolio/portfolio3_9.jpg",
-      title: "Modern Logo Design",
-      category: "Designing",
-    },
-    // ممكن تضيف مشاريع زيادة هنا
-  ];
-
+ 
   const [visibleCount, setVisibleCount] = useState(9);
 
   const handleLoadMore = () => {
@@ -139,9 +83,15 @@ const Project3 = () => {
               {visibleCount < projectContent.length && (
                 <div className="row">
                   <div className="col-xl-12 text-center mt-30">
-                    <button onClick={handleLoadMore} className="btn btn-primary">
-                      See More
-                    </button>
+                  <button 
+                  onClick={handleLoadMore} 
+                   className="btn btn-primary btn-lg fw-bold px-4 rounded-pill border-0"
+                   style={{ transition: "0.3s", backgroundColor: "#CEFF00", borderRadius: "20px" }}
+                   onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#CEFF99"}
+                   onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#CEFF00"}
+                   > 
+                 See More
+                  </button>
                   </div>
                 </div>
               )}

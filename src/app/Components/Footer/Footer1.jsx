@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer1 = () => {
     return (
-        <footer className="footer-wrapper footer-layout1">
+        <footer id="Let`s-talk" className=" footer-wrapper footer-layout1">
         <div className="main-area style-two space-minimize">
             <div className="container">
                 <div className="row justify-content-center text-center">

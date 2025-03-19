@@ -30,9 +30,9 @@
     --theme-color: #CEFF00;
     --title-color: var(--white-color);
     --body-color: var(--gray-color);
-    --black-color: #171717;
-    --black-color2: #222222;
-    --gray-color: #AAAAAA;
+    --black-color: #000000;
+    --black-color2: #000000;
+    --gray-color: #d3cbcb;
     --white-color: #ffffff;
     --light-color: #9fa2ad;
     --yellow-color: #FFB539;

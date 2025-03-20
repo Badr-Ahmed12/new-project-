@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -6,7 +6,6 @@ import { useState } from "react";
 import { projectContent } from ".";
 
 const Project3 = () => {
- 
   const [visibleCount, setVisibleCount] = useState(9);
 
   const handleLoadMore = () => {
@@ -42,7 +41,7 @@ const Project3 = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="row gx-110 justify-content-between"
+                className="row"
               >
                 {projectContent.slice(0, visibleCount).map((item, i) => (
                   <motion.div
@@ -51,47 +50,54 @@ const Project3 = () => {
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: 20 }}
                     transition={{ duration: 0.5 }}
-                    className={item.addclass}
+                    className="col-md-4 col-sm-6 p-3"
                   >
                     <div className="portfolio-wraper-3">
                       <div className="portfolio-thumb style-2">
                         <Link href="/project/project-details">
-                          <img alt="portfolio" src={item.img} />
+                          <img alt="portfolio" src={item.img} className="img-fluid" />
                         </Link>
                         <div className="portfolio-thumb-view">
                           <Link
-                            href="/project/project-details"
+                            href={item.link}
                             className="lightbox-image"
                             data-fancybox="gallery"
                           >
                             <img src="/assets/images/icons/eye.svg" alt="View" />
+                            <h1
+                      style={{
+                      fontSize: "25px",
+                      textAlign: "center",
+                      fontWeight: "600",
+                      color: "black",
+                      marginBottom: "8px ",
+                      letterSpacing: "0.5px",
+                      marginTop: "15px ",
+                       }}
+                      >
+                     {item.title}
+                             </h1>
+
                           </Link>
                         </div>
-                      </div>
-                      <div className="portfolio-details pr-30 md-pr-0">
-                        <h4 className="title">
-                          <Link href="/project/project-details">{item.title}</Link>
-                        </h4>
-                        <Link href="/project/project-details" className="portfolio-btn">
-                          <span className="meta">{item.category}</span>
-                        </Link>
                       </div>
                     </div>
                   </motion.div>
                 ))}
               </motion.div>
+
               {visibleCount < projectContent.length && (
                 <div className="row">
                   <div className="col-xl-12 text-center mt-30">
-                  <button 
-                  onClick={handleLoadMore} 
-                   className="btn btn-primary btn-lg fw-bold px-4 rounded-pill border-0"
-                   style={{ transition: "0.3s", backgroundColor: "#CEFF00", borderRadius: "20px" }}
-                   onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#CEFF99"}
-                   onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#CEFF00"}
-                   > 
-                 See More
-                  </button>
+                    <button 
+                      onClick={handleLoadMore} 
+                      className="btn btn-primary btn-lg fw-bold px-4 rounded-pill border-0"
+                      style={{ transition: "0.3s", backgroundColor: "#CEFF00", borderRadius: "20px" }}
+                      onMouseOver={(e) => e.currentTarget.style.backgroundColor = "#CEFF99"}
+                      onMouseOut={(e) => e.currentTarget.style.backgroundColor = "#CEFF00"}
+                    > 
+                      See More
+                    </button>
                   </div>
                 </div>
               )}

@@ -37,8 +37,8 @@ const Footer1 = () => {
                           <div className="contact-btn text-center ">
                              <a className="btn-black" href="https://web.whatsapp.com/send?phone=+201067683447&text=Hello" target="_blank" rel="noopener noreferrer">
                                 <span className="link-effect">
-                                    <span className="effect-1">whatsapp web</span>
-                                    <span className="effect-1">whatsapp web</span>
+                                    <span className="effect-1">whatsapp me</span>
+                                    <span className="effect-1">whatsapp me</span>
                                 </span>
                              </a>
                              <a className="btn-black d-md-none" href="https://api.whatsapp.com/send?phone=+201067683447&text=Hello">

@@ -1,12 +1,11 @@
-export const projectContent = [
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" },
-  { addclass: "col-xl-4 col-lg-6 col-md-6 ms-xl-5 ms-lg-3 ms-md-0 mb-5", img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Illustrator Graphics", link: "project/project-details/5" }
+const projectContent = [
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "MASKOOB", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 2", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 3", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 4", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 5", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 6", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 7", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 8", link: "project/project-details/5" },
+  { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 9", link: "project/project-details/5" },
 ];
-

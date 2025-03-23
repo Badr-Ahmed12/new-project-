@@ -26,6 +26,18 @@ const ProjectDetails = () => {
     setCurrentIndex((prev) => (prev + 1) % images.length);
   };
 
+  
+const splitTextByWords = (text, wordsPerChunk = 20) => {
+  const words = text.split(' ');
+  const chunks = [];
+  for (let i = 0; i < words.length; i += wordsPerChunk) {
+    chunks.push(words.slice(i, i + wordsPerChunk).join(' '));
+  }
+  return chunks;
+};
+const paragraphs = splitTextByWords(project.overview, 20);
+
+
   return (
     <div className="container py-5 mt-150">
       <div className="mb-5 text-center">
@@ -67,9 +79,14 @@ const ProjectDetails = () => {
       )}
 
       <div className="mb-5">
-        <h3 className="mb-3">Project Overview</h3>
-        <p className="lead">{project.overview}</p>
-      </div>
+      <h3 className="mb-3 ">Project Overview</h3>
+      {paragraphs.map((para, index) => (
+        <p key={index} className="lead " style={{ lineHeight: '1.6' }}>
+          {para}
+        </p>
+      ))}
+    </div>
+
 
       <div className="mb-5">
         <div className="position-relative">
@@ -121,13 +138,13 @@ const ProjectDetails = () => {
             <button
               onClick={() => setCurrentIndex(index)}
               className={`btn p-0 border-0 ${currentIndex === index ? "border border-2 rounded" : "rounded"}`}
-              style={{ width: "100%" }}
+              style={{ width: "100%" , height: "100%"  , cursor: "pointer"  , backgroundColor: "transparent" ,  }}
             >
               <Image
                 src={image || "/placeholder.svg"}
                 alt={`Thumbnail ${index + 1}`}
-                width={150}
-                height={100}
+                width={300}
+                height={300}
                 className="img-fluid rounded shadow-sm"
               />
             </button>

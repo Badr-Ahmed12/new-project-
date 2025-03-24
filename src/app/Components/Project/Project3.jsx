@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { Eye } from "lucide-react";
 
 const projectContent = [
   { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "MASKOOB", link: "project/project-details/5" },
@@ -21,7 +20,6 @@ const projectContent = [
   { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 9", link: "project/project-details/5" },
   { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 9", link: "project/project-details/5" },
   { img: "/assets/images/portfolio/portfolio3_1.jpg", title: "Project 9", link: "project/project-details/5" },
-
 ];
 
 const Project3 = () => {
@@ -42,10 +40,7 @@ const Project3 = () => {
       <div className="container py-5">
         <div className="row">
           <div className="col-xl-12 mb-4 text-center text-white">
-          <h2 className="fw-bold text-uppercase text-center neon-text">
-  My Projects
-</h2>
-
+            {/* ممكن تضيف عنوان أو وصف هنا لو حابب */}
           </div>
         </div>
 
@@ -69,10 +64,7 @@ const Project3 = () => {
                   />
                   {/* Overlay يظهر عند hover */}
                   <div className="overlay d-flex flex-column align-items-center justify-content-center">
-                    <span className="project-title text-white fw-bold">{item.title}</span>
-                    <button className="see-more-button mt-2" aria-label="see more" title="see more">
-                      <Eye size={32} color="#fff" />
-                    </button>
+                    <span className="project-title text-white fw-bold" style={{ fontSize: "2.5rem" }}>{item.title}</span>
                   </div>
                 </Link>
               </div>
@@ -134,35 +126,14 @@ const Project3 = () => {
           font-size: 1.5rem; /* ممكن تزود الرقم على حسب اللي تحبه */
           margin-bottom: 10px;
         }
-        /* تصميم الزرار باستخدام خلفية داكنة وحدود دائرية وتكبير الحجم */
-        .see-more-button {
-          background-color: #333;
-          border: none;
-          padding: 15px;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          cursor: pointer;
-          transition: background-color 0.3s ease, transform 0.3s ease;
+        .neon-text {
+          font-family: 'Orbitron', sans-serif;
+          font-size: 5rem;
+          color: #ccff00;
+          text-shadow: 0 0 10px #ccff00, 0 0 20px #99cc00, 0 0 30px #66ff00;
+          letter-spacing: 3px;
+          animation: glow 1.5s infinite alternate;
         }
-        .see-more-button:hover {
-          background-color: #555;
-          transform: scale(1.05);
-        }
-         
-   .neon-text {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 5rem;
-    color: #ccff00;
-    text-shadow: 0 0 10px #ccff00, 0 0 20px #99cc00, 0 0 30px #66ff00;
-    letter-spacing: 3px;
-    animation: glow 1.5s infinite alternate;
-
-  }
-
-  
-
       `}</style>
     </motion.div>
   );

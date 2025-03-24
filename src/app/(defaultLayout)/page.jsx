@@ -4,7 +4,6 @@ import About1 from '../Components/About/About1';
 import Marquee from '../Components/Marquee/Marquee';
 import Project1 from '../Components/Project/Project1';
 import Brand1 from '../Components/Brand/Brand1';
-import Services1 from '../Components/Services/Services1';
 
 const Page = () => (
   <div>
@@ -25,7 +24,6 @@ const Page = () => (
     <Marquee />
     <Project1 />
     <Brand1 />
-    <Services1 />
     </div>
 );
 

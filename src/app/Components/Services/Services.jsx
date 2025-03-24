@@ -1,6 +1,4 @@
-import parse from 'html-react-parser';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Services = () => {
 
@@ -35,24 +33,17 @@ const Services = () => {
                                     <div className="service-inner">
                                         <div className="service-left">
                                             <div className="service-icon"><Image src={item.icon} alt="img" width={70} height={70}   /></div>
-                                            <h3 className={item.addclass}><Link href="/service/service-details">{parse(item.title)}</Link></h3>
+                                            <h3 className={item.addclass}></h3>
                                             <ul className="service-list">
                                             <li>+ {item.service1}</li>
                                             <li>+ {item.service2}</li>
                                             <li>+ {item.service3}</li>
                                             </ul>
                                         </div>
-                                        <div className="service-btn-wrapper">
-                                        <Link className="service-btn" href="/service/service-details">
-                                            <span><i className="bi bi-arrow-up-right"></i><i className="bi bi-arrow-up-right"></i></span>
-                                        </Link>
-                                        </div>
                                     </div>
                                     <div className="hover-reveal-bg" data-background="assets/images/service/service-1_1.jpg"></div>
                                 </div>
                                 ))}
-
-
                             </div>
                         </div>
                     </div>

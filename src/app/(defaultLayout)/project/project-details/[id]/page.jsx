@@ -27,7 +27,7 @@ const ProjectDetails = () => {
   };
 
   
-const splitTextByWords = (text, wordsPerChunk = 20) => {
+const splitTextByWords = (text, wordsPerChunk = 100) => {
   const words = text.split(' ');
   const chunks = [];
   for (let i = 0; i < words.length; i += wordsPerChunk) {
@@ -35,7 +35,7 @@ const splitTextByWords = (text, wordsPerChunk = 20) => {
   }
   return chunks;
 };
-const paragraphs = splitTextByWords(project.overview, 20);
+const paragraphs = splitTextByWords(project.overview, 100);
 
 
   return (
@@ -77,11 +77,10 @@ const paragraphs = splitTextByWords(project.overview, 20);
           />
         </div>
       )}
-
-      <div className="mb-5">
+      <div className="mb-150 mt-150">
       <h3 className="mb-3 ">Project Overview</h3>
       {paragraphs.map((para, index) => (
-        <p key={index} className="lead " style={{ lineHeight: '1.6' }}>
+        <p key={index} className="lead " style={{ lineHeight: '1.5', marginTop: '1.5rem', marginBottom: '1.5rem' }}>
           {para}
         </p>
       ))}

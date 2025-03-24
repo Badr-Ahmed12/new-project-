@@ -40,12 +40,27 @@ export default function Header({ variant }) {
       <div className="cs_main_header cs_accent_bg">
         <div className="container-fluid">
           <div className="cs_main_header_in">
-
-            <div className="cs_main_header_left">
+            <div className="cs_main_header_left" style={{ marginTop: '20px' }}>
               <Link className="cs_site_branding" href="/">
-              <Image src="/assets/images/logo.svg" alt="img" width={161} height={36}   />
+                <Image src="/assets/images/img/icon.png" alt="img" width={300} height={250} />
               </Link>
-              </div>
+            </div>
+            <style jsx global>
+              {`
+                @media (max-width: 1199px) {
+                  .cs_site_branding > a > img {
+                    width: 200px;
+                    height: 150px;
+                  }
+                }
+                @media (max-width: 991px) {
+                  .cs_site_branding > a > img {
+                    width: 150px;
+                    height: 100px;
+                  }
+                }
+              `}
+            </style>
 
               <div className="cs_main_header_center">
                 <div className="cs_nav cs_primary_font fw-medium">

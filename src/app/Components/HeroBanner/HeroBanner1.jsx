@@ -1,11 +1,10 @@
 "use client"
 import { useEffect } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
-import parse from 'html-react-parser';
 import Link from "next/link";
 import Image from "next/image";
 
-const HeroBanner1 = ({ number, email, expcontent, title1, title2, title3, title4, title5, btnname, btnurl }) => {
+const HeroBanner1 = ({ number, email,  title1, title2, title3, title4, title5, btnname, btnurl }) => {
 
     useEffect(() => {
         loadBackgroudImages();
@@ -65,8 +64,8 @@ const HeroBanner1 = ({ number, email, expcontent, title1, title2, title3, title4
                                     <Image
                                         src="/assets/images/img/My_Photo.png"
                                         alt="img"
-                                        width={window.innerWidth >= 1200 ? 800 : window.innerWidth >= 992 ? 600 : window.innerWidth >= 768 ? 400 : window.innerWidth >= 576 ? 300 : 200}
-                                        height={window.innerWidth >= 1200 ? 1000 : window.innerWidth >= 992 ? 800 : window.innerWidth >= 768 ? 600 : window.innerWidth >= 576 ? 400 : 300}
+                                        width={Math.min(800, window.innerWidth)}
+                                        height={Math.min(1000, window.innerHeight)}
                                     />
                                 </div>
                             </div>

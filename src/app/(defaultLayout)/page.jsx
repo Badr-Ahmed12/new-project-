@@ -10,7 +10,6 @@ const Page = () => (
     <HeroBanner1
       number="+20 1067683447"
       email="franciless14@gmail.com"
-      expnum="8"
       expcontent="YEARS OF <br> EXPERIENCE"
       title1="Hi there!"
       title2="I'm Mohamed"

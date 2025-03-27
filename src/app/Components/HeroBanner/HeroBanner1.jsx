@@ -1,10 +1,22 @@
 "use client"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import loadBackgroudImages from "../Common/loadBackgroudImages";
 import Link from "next/link";
 import Image from "next/image";
 
 const HeroBanner1 = ({ number, email,  title1, title2, title3, title4, title5, btnname, btnurl }) => {
+    const [windowWidth, setWindowWidth] = useState(0);
+    const [windowHeight, setWindowHeight] = useState(0);
+
+    useEffect(() => {
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+            setWindowHeight(window.innerHeight);
+        };
+        window.addEventListener("resize", handleResize);
+        handleResize();
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     useEffect(() => {
         loadBackgroudImages();
@@ -64,8 +76,8 @@ const HeroBanner1 = ({ number, email,  title1, title2, title3, title4, title5, b
                                     <Image
                                         src="/assets/images/img/My_Photo.png"
                                         alt="img"
-                                        width={Math.min(800, window.innerWidth)}
-                                        height={Math.min(1000, window.innerHeight)}
+                                        width={windowWidth < 1199 ? windowWidth : 800}
+                                        height={windowWidth < 1199 ? windowHeight : 1000}
                                     />
                                 </div>
                             </div>

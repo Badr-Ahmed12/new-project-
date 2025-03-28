@@ -1,6 +1,5 @@
 "use client"
 
-import parse from 'html-react-parser';
 import Image from 'next/image';
 
 const About3 = () => {

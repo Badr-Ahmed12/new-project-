@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" sizes="1024x1024" type="image/ico" />
         <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+        <title>Mohamed | CREATIVE DESIGNER </title>
         </head>
       <body className={`${manrope.variable} ${playfair_display.variable}`}>
         {children}

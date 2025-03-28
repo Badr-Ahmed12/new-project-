@@ -5,10 +5,10 @@ const Skill2 = () => {
     const skilltContent = [
         {img:'/assets/images/skill/skill-1.png', skillnumber:'89', skillname:'Figma'},
         {img:'/assets/images/skill/skill-2.png', skillnumber:'80', skillname:'Adobe Xd'},
-        {img:'/assets/images/skill/skill-3.png', skillnumber:'95', skillname:'Wordpress'},
-        {img:'/assets/images/skill/skill-4.png', skillnumber:'85', skillname:'HTML5'},
-        {img:'/assets/images/skill/skill-5.png', skillnumber:'95', skillname:'Bootstrap'},
-        {img:'/assets/images/skill/skill-6.png', skillnumber:'85', skillname:'InvisionApp'},
+        {img:'/assets/images/skill/skill7.png', skillnumber:'95', skillname:'Adobe Photoshop'},
+        {img:'/assets/images/skill/skill8.png', skillnumber:'85', skillname:'Adobe Illustrator'},
+        {img:'/assets/images/skill/skill9.png', skillnumber:'95', skillname:'Adobe After Effects (Motion Graphics & Animation)'},
+        {img:'/assets/images/skill/skill10.png', skillnumber:'85', skillname:'Blender (3D Design)'},
       ];  
 
 

@@ -24,8 +24,7 @@ const HeroBanner1 = ({ number, email,  title1, title2, title3, title4, title5, b
 
     return (
         <section className="hero-wrapper hero-2" id="hero-2">
-            {/* عناصر التواصل والخبرة متخفية على الشاشات الصغيرة */}
-            <div className="hero-left-wrapper">
+             <div className="hero-left-wrapper">
                 <div className="contact">
                     <a href="tel:+201067683447">{number}</a>
                     <a href={`mailto:${email}`}>{email}</a>
